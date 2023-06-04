@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--    <TimePicker-->
+<!--        android:id="@+id/timePicker"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:timePickerMode="clock"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <EditText
+        android:id="@+id/alarmDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontal_spacement"
+        android:layout_marginTop="@dimen/vertical_spacement"
+        android:layout_marginEnd="@dimen/horizontal_spacement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedTime" />
+
+    <TextView
+        android:id="@+id/selectedTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_spacement"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/default_time"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="@dimen/time_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/selectButton"
+        android:onClick="popTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontal_spacement"
+        android:layout_marginTop="@dimen/vertical_spacement"
+        android:layout_marginEnd="@dimen/horizontal_spacement"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/select_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarmDescription" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/setButton"
+        android:onClick="setAlarm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontal_spacement"
+        android:layout_marginTop="@dimen/vertical_spacement"
+        android:layout_marginEnd="@dimen/horizontal_spacement"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/set_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/showButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontal_spacement"
+        android:layout_marginTop="@dimen/vertical_spacement"
+        android:layout_marginEnd="@dimen/horizontal_spacement"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/show_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
