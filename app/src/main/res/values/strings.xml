@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">Alarm Manager</string>
+    <string name="app_name">Gerenciador de Alarmes</string>
 
+    <string name="task_description">Descrição da tarefa</string>
     <string name="select_button">Selecionar Tempo</string>
     <string name="set_button">Agendar Alarme</string>
     <string name="show_button">Exibir Alarme(s)</string>

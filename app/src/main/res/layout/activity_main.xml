@@ -9,15 +9,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-<!--    <TimePicker-->
-<!--        android:id="@+id/timePicker"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        android:timePickerMode="clock"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
     <EditText
         android:id="@+id/alarmDescription"
         android:layout_width="match_parent"
@@ -25,6 +16,8 @@
         android:layout_marginStart="@dimen/horizontal_spacement"
         android:layout_marginTop="@dimen/vertical_spacement"
         android:layout_marginEnd="@dimen/horizontal_spacement"
+        android:backgroundTint="@color/teal_700"
+        android:hint="@string/task_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selectedTime" />
